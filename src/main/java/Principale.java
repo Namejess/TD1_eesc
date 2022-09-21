@@ -1,6 +1,9 @@
 import models.Bus;
+import models.Personne;
 import models.Vehicule;
 import models.Voiture;
+
+import java.util.Arrays;
 
 public class Principale {
 
@@ -20,11 +23,19 @@ public class Principale {
                 12
         );
 
+        final Voiture voiture2 = new Voiture(
+                "Reno",
+                40
+        );
 
-        System.out.println(maVoiture.info());
-        System.out.println(monBus.info());
+
+        Bus bus = new Bus(
+                6,
+                "Demler",
+                14);
 
 
+        System.out.println(bus.coutMaintenanceRoue(50));
 
 
     }

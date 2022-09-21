@@ -9,9 +9,12 @@ public class Bus extends Vehicule {
         this.nombreDePassager = nombreDePassager;
     }
 
+    public int coutMaintenanceRoue(int nombreDeRoue){
+        return nombreDeRoue * 500;
+    }
     @Override
     public String info() {
-        return null;
+        return "Ceci est un bus de " + nombreDePassager + " passagers";
     }
 
     public int getNombreDePassager() {
