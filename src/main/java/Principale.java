@@ -1,9 +1,11 @@
 import models.Bus;
-import models.Personne;
+import models.Garage;
 import models.Vehicule;
 import models.Voiture;
 
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 
 public class Principale {
 
@@ -35,7 +37,31 @@ public class Principale {
                 14);
 
 
-        System.out.println(bus.coutMaintenanceRoue(50));
+        Garage superGarage = new Garage("Super garage");
+
+        Voiture reno = new Voiture(
+                "Reno",
+                35);
+
+        Voiture rena = new Voiture(
+                "Reno",
+                35);
+
+        superGarage.ajoutVoiture(reno, rena);
+
+        HashSet<Voiture> listeVoiture2 = new HashSet<>();
+
+        listeVoiture2.add(reno);
+        listeVoiture2.add(reno);
+        listeVoiture2.add(new Voiture("Boby", 35));
+
+        HashMap<String, Voiture> mapVoiture = new HashMap<>();
+        mapVoiture.put("reno", reno);
+        mapVoiture.put("Mini", new Voiture(
+                "Mini",
+                34));
+
+        System.out.println(mapVoiture.get("Mini").getNombreDeChevaux());
 
 
     }
