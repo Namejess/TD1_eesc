@@ -10,6 +10,10 @@ public class Vehicule {
         this.marque = marque;
     }
 
+    public String info(){
+        return "Véhicule sans catégorie à " + nombreDeRoue + " roues";
+    }
+
     public int getNombreDeRoue() {
         return nombreDeRoue;
     }
