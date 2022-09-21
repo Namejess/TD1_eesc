@@ -9,6 +9,11 @@ public class Voiture extends Vehicule {
         this.nombreDeChevaux = nombreDeChevaux;
     }
 
+    @Override
+    public String info() {
+        return "C'est une voiture à 4 roues";
+    }
+
     public int getNombreDeChevaux() {
         return nombreDeChevaux;
     }

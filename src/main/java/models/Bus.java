@@ -4,9 +4,14 @@ public class Bus extends Vehicule {
 
     private int nombreDePassager;
 
-    public Bus(String marque, int nombreDePassager) {
-        super(4, marque);
+    public Bus(int nombreDeRoue, String marque, int nombreDePassager) {
+        super(nombreDeRoue, marque);
         this.nombreDePassager = nombreDePassager;
+    }
+
+    @Override
+    public String info() {
+        return null;
     }
 
     public int getNombreDePassager() {
@@ -17,3 +22,5 @@ public class Bus extends Vehicule {
         this.nombreDePassager = nombreDePassager;
     }
 }
+
+

@@ -1,18 +1,17 @@
 package models;
 
-public class Vehicule {
+public abstract class Vehicule {
 
-    private static final int nombreDeRoue = 4;
+    private int nombreDeRoue;
 
     private String marque;
 
     public Vehicule(int nombreDeRoue, String marque) {
+        this.nombreDeRoue = nombreDeRoue;
         this.marque = marque;
     }
 
-    public String info(){
-        return "Véhicule sans catégorie à " + nombreDeRoue + " roues";
-    }
+    public abstract String info();
 
     public int getNombreDeRoue() {
         return nombreDeRoue;

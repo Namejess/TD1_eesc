@@ -6,20 +6,26 @@ public class Principale {
 
     public static void main(String[] args) {
 
-        Vehicule peugeot = new Vehicule(
-                4,
-                "peugeot");
+//        Vehicule monVehicule = new Vehicule(
+//                2,
+//                "Yamaha");
 
         Voiture maVoiture = new Voiture(
-                "peugeot",
-                355
+                "Toyoto",
+                40);
+
+        Bus monBus = new Bus(
+                25,
+                "Demler",
+                12
         );
 
-        Bus bus = new Bus(
-                "Demler",
-                15);
 
-        System.out.println(voiture.fraisKilometrique(40));
+        System.out.println(maVoiture.info());
+        System.out.println(monBus.info());
+
+
+
 
     }
 }
